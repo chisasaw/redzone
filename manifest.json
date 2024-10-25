@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "ETH Wallet Extension",
+    "version": "1.0",
+    "description": "Ethereum Wallet Chrome Extension",
+    "permissions": [
+      "storage",
+      "activeTab",
+      "notifications"
+    ],
+    "action": {
+      "default_popup": "public/index.html",
+      "default_icon": {
+        "16": "assets/icon16.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+      }
+    },
+    "background": {
+      "service_worker": "src/background/background.js"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+    }
+  } 

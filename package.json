@@ -1,0 +1,27 @@
+{
+    "name": "eth-wallet-extension",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "webpack --config webpack.config.js",
+      "watch": "webpack --config webpack.config.js --watch",
+      "deploy": "hardhat run scripts/deploy.ts --network sepolia",
+      "compile": "hardhat compile"
+    },
+    "dependencies": {
+      "ethers": "^6.7.0",
+      "firebase": "^10.1.0",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "@openzeppelin/contracts": "^4.9.3"
+    },
+    "devDependencies": {
+      "@types/react": "^18.2.0",
+      "@types/react-dom": "^18.2.0",
+      "typescript": "^5.0.0",
+      "webpack": "^5.88.2",
+      "webpack-cli": "^5.1.4",
+      "hardhat": "^2.17.1",
+      "@nomiclabs/hardhat-waffle": "^2.0.6"
+    }
+  } 
+  
